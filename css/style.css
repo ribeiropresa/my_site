@@ -25,7 +25,9 @@ body.portfolio {
 }
 /* --- navbar --- */
 nav.navbar-clear  {
-	background: rgba(0,0,0,0.6); 
+	background: rgba(0,0,0,0.6);
+	padding-top: 0rem;
+	padding-bottom: 0rem;
 }
 .nav-title {
     color: #6bb8d6;
@@ -115,6 +117,22 @@ a.icon_social_networks {
 }
 a.icon_social_networks:hover {
 	color: #f3ac1d;
+	transform: scale(0.95); 
+}
+.footer-letters {
+	color: #f3ac1d;
+}
+.footer-letters p {
+	font-size: 1.85rem;
+	margin-bottom: 0!important;
+}
+.logo_img {
+	content: url(../images/logo.png);
+	width: 50px;
+}
+.logo_img:hover {
+	content: url(../images/logo_2.png);
+	width: 50px;
 	transform: scale(0.95); 
 }
 /* --- Modal --- */
