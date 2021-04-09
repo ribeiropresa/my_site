@@ -44,6 +44,13 @@ nav.navbar-clear  {
 	width: 60%;
 	left: 20%;
 }
+.icon-hamburger {
+    width: 30px;
+}
+.navbar-toggler:focus {
+    border-color: #6bb8d6;
+    outline: none;
+}
 .divider {
 	width: 1px;
 	background: #f3ac1d;
@@ -65,7 +72,7 @@ nav.navbar-clear  {
 .parent:before {
     content: '';
     display: inline-block;
-    height: 100vh;
+    height: 70vh;
     vertical-align: middle;
 }
 .child-photo, .child-text-box {
@@ -83,8 +90,8 @@ h3.question {
 }
 p.answer {
     margin: 1.5rem!important;
+    color: #6bb8d6;
     font-size: 2.5vw;
-    
 }
 /* --- images --- */
 .fixed-bg.box-1 {
@@ -116,7 +123,7 @@ p.answer {
 #creativity,
 #technology,
 #inovation {
-    font-size: 2.5vw;
+    font-size: 1.5rem;
 }
 #information {
     color: #f3ac1d;
@@ -234,7 +241,7 @@ a.icon_social_networks:hover {
 	transform: scale(0.95); 
 }
 .footer-letters {
-	color: #f3ac1d;
+	color: #6bb8d6;
 }
 .footer-letters p {
 	font-size: 1.85rem;
@@ -327,7 +334,50 @@ h3 {
 /* --- MEDIA QUERIES --- */
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    /* --- navbar --- */
+    .navbar-collapse {
+        text-align: center;
+    }
+    .navbar-light .navbar-nav .nav-item {
+        margin-right: 45%;
+        margin-left:45%;
+    }
+    .navbar-light .navbar-nav .nav-link:before {
+        height: 0.5px;
+    }
+    .navbar-light .navbar-nav .nav-link:hover:before {
+        transform: scaleX(1);
+        width: 55%;
+        left: 25%;
+    }
+    .divider {
+        height: 1px;
+        width: 10%;
+        background: #f3ac1d;
+    }
+    /* --- images --- */
+    .fixed-bg.box-1 {
+        background-image: url(../images/screen-max-width770/who.png);
+    }
+    .fixed-bg.box-2 {
+        background-image: url(../images/screen-max-width770/when-why.png);
+    }
+    .fixed-bg.box-3 {
+        background-image: url(../images/screen-max-width770/what.png);
+    }
+    .fixed-bg.box-4 {
+        background-image: url(../images/where.png);
+    }
+    .fixed-bg.box-5 {
+        background-image: url(../images/screen-max-width770/how.png);
+    }
 	/* -- arrows diagram -- */
+    #information,
+    #creativity,
+    #technology,
+    #inovation {
+    font-size: 0.55rem!important;
+    }
     .container-arrows {
         height: 4rem;
     }
@@ -378,8 +428,54 @@ h3 {
         width: 5px;
         height: 5px;
     }
+    p.answer {
+        font-size: 0.85rem;
+    }
 }
 @media (max-width: 576px) {
+    /* --- navbar --- */
+    .navbar-collapse {
+        text-align: center;
+    }
+    .navbar-light .navbar-nav .nav-item {
+        margin-right: 45%;
+        margin-left:45%;
+    }
+    .navbar-light .navbar-nav .nav-link:before {
+        height: 0.5px;
+    }
+    .navbar-light .navbar-nav .nav-link:hover:before {
+        transform: scaleX(1);
+        width: 55%;
+        left: 25%;
+    }
+    .divider {
+        height: 1px;
+        width: 10%;
+        background: #f3ac1d;
+    }
+    /* --- images --- */
+    .fixed-bg.box-1 {
+        background-image: url(../images/screen-max-width770/who.png);
+    }
+    .fixed-bg.box-2 {
+        background-image: url(../images/screen-max-width770/when-why.png);
+    }
+    .fixed-bg.box-3 {
+        background-image: url(../images/screen-max-width770/what.png);
+    }
+    .fixed-bg.box-4 {
+        background-image: url(../images/where.png);
+    }
+    .fixed-bg.box-5 {
+        background-image: url(../images/screen-max-width770/how.png);
+    }
+    #information,
+    #creativity,
+    #technology,
+    #inovation {
+    font-size: 0.75rem;
+    }
 	.arrow.col1.up {
         top: 180%;
         left: 95%;
@@ -424,11 +520,60 @@ h3 {
         width: 5px;
         height: 5px;
     }
+    .btn-text {
+		font-size: 0.65rem;
+	}
+    p.answer {
+        font-size: 0.85rem;
+    }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+    /* --- navbar --- */
+    .navbar-collapse {
+        text-align: center;
+    }
+    .navbar-light .navbar-nav .nav-item {
+        margin-right: 45%;
+        margin-left:45%;
+    }
+    .navbar-light .navbar-nav .nav-link:before {
+        height: 0.5px;
+    }
+    .navbar-light .navbar-nav .nav-link:hover:before {
+        transform: scaleX(1);
+        width: 55%;
+        left: 25%;
+    }
+    .divider {
+        height: 1px;
+        width: 10%;
+        background: #f3ac1d;
+    }
+    /* --- images --- */
+    .fixed-bg.box-1 {
+        background-image: url(../images/screen-max-width770/who.png);
+    }
+    .fixed-bg.box-2 {
+        background-image: url(../images/screen-max-width770/when-why.png);
+    }
+    .fixed-bg.box-3 {
+        background-image: url(../images/screen-max-width770/what.png);
+    }
+    .fixed-bg.box-4 {
+        background-image: url(../images/where.png);
+    }
+    .fixed-bg.box-5 {
+        background-image: url(../images/screen-max-width770/how.png);
+    }
+    #information,
+    #creativity,
+    #technology,
+    #inovation {
+        font-size: 0.75rem;
+    }
 	.container-arrows, #height-diagram {
-        height: 5.5rem;
+        height: 4.5rem;
     }
 	.arrow span{
 		width: 10px;
@@ -451,31 +596,31 @@ h3 {
 		border-right: 1px solid #de3f18;
 	}
 	.arrow.col1.up {
-        top: 170%;
+        top: 180%;
         left: 90%;
     }
     .arrow.col1.down {
-        top: 150%;
-        left: 110%;
+        top: 160%;
+        left: 105%;
     }
 	.arrow.col3.down {
-        top: 165%;
+        top: 180%;
         left: -10%;
     }
     .arrow.col3.up {
-        top: 155%;
+        top: 160%;
         left: 10%;
     }
     .arrow.col2.right_a {
         top: 40%;
-        left: 80%;
+        left: 75%;
     }
     .arrow.col2.right_b {
         top: 40%;
         left: 20%;
     }
     .arrow.col2.up_a {
-        top: -30%;
+        top: -15%;
         left: 50%;
     }
     .arrow.col2.up_b {
@@ -483,22 +628,34 @@ h3 {
         left: 50%;
     }
     .arrow.col1_3.up {
-        top: -65%;
-        left: 100%;
+        top: -85%;
+        left: 105%;
     }
     .arrow.col3_3.up {
-        top: -50%;
+        top: -60%;
         left: 0%;
     }
+    p.answer {
+        font-size: .95rem;
+    }
+    .btn-text {
+		font-size: 0.85rem;
+	}
 } 
 /* Medium devices (tablets, 768px and up) */
  @media (min-width: 768px) and (max-width: 991.98px) {
+    #information,
+    #creativity,
+    #technology,
+    #inovation {
+        font-size: 1.10rem;
+    }
 	.container-arrows, #height-diagram {
         height: 6rem;
     }
 	.arrow.col1.up {
-        top: 135%;
-        left: 95%;
+        top: 175%;
+        left: 90%;
     }
     .arrow.col1.down {
         top: 160%;
@@ -509,8 +666,8 @@ h3 {
         left: -5%;
     }
     .arrow.col3.up {
-        top: 130%;
-        left: 5%;
+        top: 165%;
+        left: 10%;
     }
     .arrow.col2.right_a {
         top: 45%;
@@ -539,12 +696,18 @@ h3 {
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    #information,
+    #creativity,
+    #technology,
+    #inovation {
+        font-size: 1.25rem;
+    }
 	.container-arrows, #height-diagram {
-        height: 7rem;
+        height: 6rem;
     }
 	.arrow.col1.up {
-        top: 140%;
-        left: 95%;
+        top: 175%;
+        left: 90%;
     }
     .arrow.col1.down {
         top: 150%;
@@ -555,8 +718,8 @@ h3 {
         left: -5%;
     }
     .arrow.col3.up {
-        top: 135%;
-        left: 5%;
+        top: 170%;
+        left: 10%;
     }
     .arrow.col2.right_a {
         top: 45%;
@@ -575,8 +738,8 @@ h3 {
         left: 50%;
     }
     .arrow.col1_3.up {
-        top: -65%;
-        left: 100%;
+        top: -70%;
+        left: 105%;
     }
     .arrow.col3_3.up {
         top: -60%;
@@ -585,28 +748,31 @@ h3 {
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    .container-arrows, #height-diagram {
+        height: 6rem;
+    }
 	.arrow.col1.up {
-        top: 130%;
+        top: 135%;
 		left: 95%;
     }
 	.arrow.col1.down {
         top: 150%;
-		left: 100%;
+		left: 105%;
     }
 	.arrow.col3.down {
         top: 155%;
-        left: 0%;
+        left: -5%;
     }
     .arrow.col3.up {
-        top: 125%;
+        top: 130%;
 		left: 5%;
     }
     .arrow.col2.right_a {
-        top: 45%;
+        top: 50%;
         left: 15%;
     }
     .arrow.col2.right_b {
-        top: 45%;
+        top: 50%;
         left: 85%;
     }
     .arrow.col2.up_a {
@@ -624,5 +790,8 @@ h3 {
     .arrow.col3_3.up {
         top: -55%;
         left: 0%;
-    }	
+    }
+	.btn-text {
+		font-size: 1.5rem;
+	}
 }
