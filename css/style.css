@@ -29,6 +29,9 @@ nav.navbar-clear  {
 	padding-top: 0rem;
 	padding-bottom: 0rem;
 }
+.to-landing:hover {
+    transform: scale(0.95); 
+}
 .nav-title {
     color: #6bb8d6;
     font-weight: 600;
