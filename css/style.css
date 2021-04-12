@@ -56,6 +56,7 @@ nav.navbar-clear  {
 	background: #f3ac1d;
 	margin: 12px 15px;
 }
+/* --- section --- */
 .carousel_title, .carousel_subtitle {
 	color: #f3ac1d;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -75,6 +76,10 @@ nav.navbar-clear  {
 	color: #6bb8d6;
 	text-shadow: none;
 	font-weight: 700;
+}
+.to-language:hover {
+	text-decoration: none;
+    transform: scale(1.25); 
 }
 .form_contact {
 	color: #f3ac1d;
@@ -183,7 +188,7 @@ h3 {
 /* --- Flip box --- */
 .flip-box {
     display: flex !important;
-    background-color: #f3ac1d;
+    background-color: rgba(0,0,0,0.7);
     width: 205px;
     height: 255px;
     border: 1px solid #6bb8d6;
@@ -215,25 +220,24 @@ h3 {
     color: black;
 }
 .flip-box-back {
-    background-color: #b1be46;
+    background-color: rgba(0,0,0,0.4);
     color: #6bb8d6;
     transform: rotateY(180deg);
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-} 
+}
 .flip-image {
 	border-radius: 5px;
 	width: 200px;
 	height: 250px;
 }
 .btn-portfolio a {
-	background: #f3ac1d;
+	background: rgb(107, 184, 214, 0.7);
 	border: none;
 }
 .btn-portfolio a:hover {
-	background: #6bb8d6;
+	background: rgb(107, 184, 214, 0.9);
 	border: none;
 }
-
 /* --- MEDIA QUERIES --- */
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
